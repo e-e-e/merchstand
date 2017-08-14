@@ -5,9 +5,10 @@
 ==============================================================================*/
 input,
 textarea,
-select {
-  border: 1px solid $color-border;
-  border-radius: 0;
+select,
+button {
+  border: .07em solid $color-border;
+  border-radius: .2em;
   max-width: 100%;
 
   &:focus {
@@ -61,3 +62,28 @@ textarea {
     color: $color-error;
   }
 }
+
+/*============= CUSTOM ========*/
+
+
+input#Search:not(:last-child) {
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-right: 0;
+  margin-right: 0;
+  height: 2rem;
+}
+
+input#Search + button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: 0;
+  height: 2rem;
+}
+
+button, input[type=submit] {
+  background-color: white;
+}
+
+

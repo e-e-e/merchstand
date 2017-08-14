@@ -4,9 +4,38 @@ html {
   background-color: $color-body;
 }
 
-.page-width {
-  @include clearfix();
+body {
+  margin: 1rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  div {
+    padding-bottom: 1rem;
+  }
+
+  div:not(:first-child) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 2rem;
+  }
+}
+
+div.main-content {
   max-width: $width-site;
+  border: .2rem $color-primary solid;
   padding: 0 $gutter;
   margin: 0 auto;
+}
+
+img {
+  display: block;
+  border: .1rem $color-primary solid;
+  padding: 0.2rem;
+  margin: 0;
 }

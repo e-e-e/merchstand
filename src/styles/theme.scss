@@ -1,5 +1,5 @@
 /*============================================================================
-  [replace with theme name] | Built with Slate
+  Merchstanc | Built with Slate
     - You cannot use native CSS/Sass @imports in this file without a build script
 ==============================================================================*/
 
@@ -21,6 +21,8 @@
 @import url('global/links-buttons.scss');
 @import url('global/forms.scss');
 @import url('global/blank-states.scss');
+@import url('global/typography.scss');
+
 
 /*================ MODULES ================*/
 @import url('modules/site-header.scss');
